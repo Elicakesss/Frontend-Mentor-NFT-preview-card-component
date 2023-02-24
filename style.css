@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,300&display=swap');
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    margin: 0%;
+    margin-left: 35%;
+    flex-direction: column;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.container{
+    width: 300px;
+    height: 700px;
+    padding-left: 20%;
+    background-color: hsl(216, 50%, 16%);
+    max-width: 22rem;
+    margin: 3rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 4);
+    position: relative;
+}
+
+.nft-card img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    display: inline-block;
+    left: 12%;
+    top: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nft-overlay img{
+    top: 45%;
+    left: 45%;
+    width: 40px;
+    height: 40px;
+}
+
+
+.nft-overlay{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 12%;
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+
+
+.nft-card:hover .nft-overlay{
+    opacity: 1;
+    display: block;
+}
+
+
+.card-body h2{
+    font-family: "Outfit", sans-serif;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    cursor: pointer;
+}
+
+.card-body h2:hover{
+    color: cyan;
+}
+
+.card-body p{
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    position: absolute;
+    font-size: 18px;
+    bottom: 25%;
+    left: 10%;
+    right: 5%;
+    color: hsl(215, 51%, 70%);
+}
+
+.price-time .price{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.price-time .time{
+    position: absolute;
+    bottom: 20%;
+    right: 8%;
+    color: hsl(215, 51%, 70%);
+}
+
+hr{
+    position: absolute;
+   width: 80%;
+   left: 10%;
+   bottom: 15%;
+}
+
+.user img{
+    position:absolute;
+    bottom: 5%;
+    size-adjust: 2px;
+    height: 50px;
+    width: 50px;
+    left: 8%;
+}
+
+.blue-color p{
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    color:hsl(215, 51%, 70%)
+}
+
+.white-color p{
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    left: 36%;
+}
+
+.white-color p:hover{
+    color:cyan;
+}
+
+.attribution footer{
+    position: absolute;
+    left: 43%;
+}
